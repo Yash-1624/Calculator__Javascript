@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly placeholder="0">
+        <div class="buttons">
+            <button class="clear" onclick="clearAll()">AC</button>
+            <button class="clear" onclick="clearNumber()">C</button>
+            <button class="parenthesis" onclick="addChar('(')">(</button>
+            <button class="parenthesis" onclick="addChar(')')">)</button>
+
+            <button class="number" onclick="addChar('7')">7</button>
+            <button class="number" onclick="addChar('8')">8</button>
+            <button class="number" onclick="addChar('9')">9</button>
+            <button class="operator" onclick="addChar('/')">÷</button>
+
+            <button class="number" onclick="addChar('4')">4</button>
+            <button class="number" onclick="addChar('5')">5</button>
+            <button class="number" onclick="addChar('6')">6</button>
+            <button class="operator" onclick="addChar('*')">×</button>
+
+            <button class="number" onclick="addChar('1')">1</button>
+            <button class="number" onclick="addChar('2')">2</button>
+            <button class="number" onclick="addChar('3')">3</button>
+            <button class="operator" onclick="addChar('-')">−</button>
+
+            <button class="number zero" onclick="addChar('0')">0</button>
+            <button class="number" onclick="addChar('.')">.</button>
+            <button class="operator" onclick="addChar('+')">+</button>
+
+            <button class="equals" onclick="calculate()" style="grid-column: span 4;">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
